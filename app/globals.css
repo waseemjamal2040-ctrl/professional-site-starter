@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height: 100%;
+}
+
+:root {
+  --bg: 255 255 255;
+  --fg: 15 23 42;
+}
+
+.dark {
+  --bg: 15 23 42;
+  --fg: 226 232 240;
+}
+
+body {
+  background-color: rgb(var(--bg));
+  color: rgb(var(--fg));
+}
+
+.container {
+  @apply max-w-5xl mx-auto px-4;
+}
+
+.prose {
+  @apply prose-slate dark:prose-invert;
+}
